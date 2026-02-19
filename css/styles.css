@@ -123,3 +123,11 @@ div {
 .navbar a:hover {
     color: white;
 }
+.carrito-contador{
+    background: #ffd400;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
