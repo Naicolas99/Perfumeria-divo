@@ -18,3 +18,11 @@ function agregarProducto(nombre, precio) {
     // 5️⃣ Mensaje al usuario
     alert(nombre + " agregado al pedido");
 }
+// Mostrar cantidad de productos en carrito
+function actualizarContador(){
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    document.getElementById("contadorCarrito").innerText = carrito.length;
+}
+
+// Ejecutar al cargar página
+actualizarContador();
