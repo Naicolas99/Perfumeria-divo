@@ -8,25 +8,36 @@
 
 <body>
 
-    <h1>Catálogo de Perfumes</h1>
+   <h1>Catálogo de Perfumes</h1>
 
-    <div>
+<div class="productos">
+
+    <div class="card">
         <h3>Perfume 1</h3>
-        <p>Precio: $100.000</p>
-        <button onclick="agregarProducto('Perfume 1', 100000)">
-    Agregar al pedido
-</button>
-
+        <p class="precio">$100.000</p>
+        <button class="btn-agregar" onclick="agregarProducto('Perfume 1',100000)">
+            Agregar al pedido
+        </button>
     </div>
 
-    <div>
+    <div class="card">
         <h3>Perfume 2</h3>
-        <p>Precio: $120.000</p>
-        <button onclick="agregarProducto('Perfume 2', 120000)">
-    Agregar al pedido
-</button>
-
+        <p class="precio">$120.000</p>
+        <button class="btn-agregar" onclick="agregarProducto('Perfume 2',120000)">
+            Agregar al pedido
+        </button>
     </div>
+
+    <div class="card">
+        <h3>Perfume 3</h3>
+        <p class="precio">$95.000</p>
+        <button class="btn-agregar" onclick="agregarProducto('Perfume 3',95000)">
+            Agregar al pedido
+        </button>
+    </div>
+
+</div>
+
 
     <br>
 
@@ -35,4 +46,5 @@
 
 </body>
 </html>
+
 
