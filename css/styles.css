@@ -56,3 +56,51 @@ div {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(255,215,0,0.3);
 }
+/* ===== GRID DE PRODUCTOS ===== */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+/* ===== TARJETA PERFUME ===== */
+
+.card {
+    background: #111;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.5);
+}
+
+.card h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.btn-agregar {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background: #ffd633;
+}
