@@ -1,6 +1,7 @@
+// ===== AGREGAR PRODUCTO AL CARRITO =====
 function agregarProducto(nombre, precio) {
 
-    // 1️⃣ Obtener carrito actual del navegador
+    // 1️⃣ Obtener carrito guardado
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     // 2️⃣ Crear producto
@@ -15,14 +16,23 @@ function agregarProducto(nombre, precio) {
     // 4️⃣ Guardar carrito actualizado
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    // 5️⃣ Mensaje al usuario
+    // 5️⃣ Mostrar mensaje
     alert(nombre + " agregado al pedido");
-}
-// Mostrar cantidad de productos en carrito
-function actualizarContador(){
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    document.getElementById("contadorCarrito").innerText = carrito.length;
+
+    // 6️⃣ ACTUALIZAR CONTADOR DEL NAVBAR ⭐
+    actualizarContador();
 }
 
-// Ejecutar al cargar página
+
+// ===== CONTADOR DEL NAVBAR =====
+function actualizarContador(){
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let contador = document.getElementById("contadorCarrito");
+
+    if(contador){
+        contador.innerText = carrito.length;
+    }
+}
+
+// Ejecutar contador cuando carga la página
 actualizarContador();
