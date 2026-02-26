@@ -8,7 +8,8 @@
 
 <body>
 
- <nav class="navbar">
+<!-- NAVBAR -->
+<nav class="navbar">
     <div class="logo">Perfumería DIVO</div>
 
     <div class="menu">
@@ -18,26 +19,36 @@
     </div>
 </nav>
 
+<!-- CONTENEDOR PRINCIPAL -->
+<div class="container">
 
+    <h1>Resumen del Pedido</h1>
+    <h3>Total a pagar: $<span id="total">0</span></h3>
 
+    <br>
+
+    <button onclick="vaciarCarrito()">Vaciar pedido</button>
+    <button onclick="confirmarPedido()">Confirmar pedido</button>
+
+    <br><br><br>
 
     <h2>Forma de pago</h2>
 
     <p>
-        Para completar el pago, escanea el código QR,
-        digita el monto correspondiente y envía el comprobante
-        al correo o WhatsApp del emprendimiento.
+        Para completar el pago, escanea el código QR, digita el monto correspondiente
+        y envía el comprobante al correo o WhatsApp del emprendimiento.
     </p>
 
     <h3>Paga con Nequi</h3>
-<img src="qr-nequi.jpg" width="250">
+    <img src="qr-nequi.jpg" width="250">
 
+    <br><br>
 
     <a href="catalogo.html">Volver al catálogo</a>
+
+</div>
+
 <script src="js/pedido.js"></script>
 
 </body>
 </html>
-
-
-
