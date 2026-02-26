@@ -36,3 +36,40 @@ function actualizarContador(){
 
 // Ejecutar contador cuando carga la página
 actualizarContador();
+// ===== MOSTRAR TOTAL EN PEDIDO =====
+function mostrarTotal(){
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let total = 0;
+
+    carrito.forEach(producto => {
+        total += producto.precio;
+    });
+
+    let totalElemento = document.getElementById("total");
+    if(totalElemento){
+        totalElemento.innerText = total;
+    }
+}
+
+// ===== VACIAR CARRITO =====
+function vaciarCarrito(){
+    localStorage.removeItem("carrito");
+    actualizarContador();
+    mostrarTotal();
+    alert("Carrito vaciado");
+}
+
+// ===== CONFIRMAR PEDIDO =====
+function confirmarPedido(){
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    if(carrito.length === 0){
+        alert("No hay productos en el pedido");
+        return;
+    }
+
+    alert("Pedido confirmado. Realiza el pago.");
+}
+
+// Ejecutar total al cargar página
+mostrarTotal();
