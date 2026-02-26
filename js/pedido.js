@@ -12,11 +12,14 @@ function mostrarProductos(){
 
     lista.innerHTML = "";
 
-    carrito.forEach(producto => {
-        let li = document.createElement("li");
-        li.innerText = producto.nombre + " - $" + producto.precio;
-        lista.appendChild(li);
-    });
+ carrito.forEach((producto, index) => {
+
+    let li = document.createElement("li");
+    li.innerHTML = producto.nombre + " - $" + producto.precio +
+    " <button onclick='eliminarProducto(" + index + ")'>❌</button>";
+
+    lista.appendChild(li);
+});;
 }
 
 // ===== MOSTRAR TOTAL =====
@@ -41,6 +44,15 @@ function vaciarCarrito(){
     mostrarTotal();
     mostrarProductos();
     alert("Carrito vaciado");
+    function eliminarProducto(index){
+    let carrito = obtenerCarrito();
+    carrito.splice(index, 1);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    mostrarProductos();
+    mostrarTotal();
+    actualizarContador();
+}
 }
 
 // ===== CONFIRMAR PEDIDO =====
