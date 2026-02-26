@@ -88,3 +88,11 @@ img{
     border-radius:15px;
     box-shadow:0 0 20px rgba(255,215,0,0.5);
 }
+/* ===== FOOTER ===== */
+.footer{
+    margin-top:60px;
+    padding:30px;
+    background:black;
+    border-top:2px solid gold;
+    color:gold;
+}
