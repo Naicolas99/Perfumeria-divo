@@ -64,7 +64,7 @@ function confirmarPedido(){
         return;
     }
 
-    alert("Pedido confirmado. Realiza el pago.");
+    alertalert("🎉 Pedido confirmado 🎉\nGracias por comprar en Perfumería DIVO.\nEnvía tu comprobante por WhatsApp.");
 }
 
 // ===== CONTADOR NAVBAR =====
