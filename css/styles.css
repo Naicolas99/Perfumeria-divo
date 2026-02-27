@@ -242,3 +242,24 @@ img{
         font-size:16px;
     }
 }
+/* ===== HERO HOME ===== */
+.hero{
+    padding:120px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1594035910387-fea47794261f");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn-hero{
+    font-size:20px;
+}
