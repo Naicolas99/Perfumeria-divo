@@ -37,8 +37,6 @@ function mostrarTotal(){
         totalElemento.innerText = totalFormateado + " COP";
     }
 }
-    }
-}
 
 // ===== VACIAR CARRITO =====
 function vaciarCarrito(){
@@ -49,7 +47,7 @@ function vaciarCarrito(){
     alert("Carrito vaciado");
 }
 
-// ===== ELIMINAR PRODUCTO INDIVIDUAL ⭐
+// ===== ELIMINAR PRODUCTO INDIVIDUAL =====
 function eliminarProducto(index){
     let carrito = obtenerCarrito();
     carrito.splice(index, 1);
@@ -69,7 +67,7 @@ function confirmarPedido(){
         return;
     }
 
-    alertalert("🎉 Pedido confirmado 🎉\nGracias por comprar en Perfumería DIVO.\nEnvía tu comprobante por WhatsApp.");
+    alert("🎉 Pedido confirmado 🎉\nGracias por comprar en Perfumería DIVO.\nEnvía tu comprobante por WhatsApp.");
 }
 
 // ===== CONTADOR NAVBAR =====
