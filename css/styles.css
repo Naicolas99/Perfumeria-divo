@@ -99,6 +99,21 @@ img{
 .card{
     transition: 0.3s;
 }
+/* ===== COLORES REDES SOCIALES ===== */
+.whatsapp{
+    background:#25D366 !important;
+    color:white !important;
+}
+
+.instagram{
+    background:#E4405F !important;
+    color:white !important;
+}
+
+.facebook{
+    background:#1877F2 !important;
+    color:white !important;
+}
 
 .card:hover{
     transform: scale(1.05);
