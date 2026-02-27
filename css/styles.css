@@ -149,7 +149,7 @@ img{
     font-size:12px;
 }
 
-/* ===== BOTONES FLOTANTES REDES ===== */
+/* ===== BOTONES FLOTANTES REDES (TAMAÑO NUEVO) ===== */
 .redes-flotantes{
     position: fixed;
     bottom: 20px;
@@ -160,20 +160,21 @@ img{
 }
 
 .redes-flotantes a{
-    font-size: 20px;
-    width: 48px;
-    height: 48px;
+    font-size: 18px;        /* tamaño icono */
+    width: 45px;            /* tamaño círculo */
+    height: 45px;
     border-radius: 50%;
     display:flex;
     justify-content:center;
     align-items:center;
     text-decoration:none;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     transition: 0.3s;
 }
 
 .redes-flotantes a:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
+}
 }
 
 /* COLORES REDES */
