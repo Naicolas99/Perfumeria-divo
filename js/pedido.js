@@ -67,7 +67,27 @@ function confirmarPedido(){
         return;
     }
 
-    alert("🎉 Pedido confirmado 🎉\nGracias por comprar en Perfumería DIVO.\nEnvía tu comprobante por WhatsApp.");
+    let mensaje = "Hola! Quiero hacer el siguiente pedido:%0A%0A";
+    let total = 0;
+
+    carrito.forEach(producto => {
+        mensaje += "• " + producto.nombre + " - $" + producto.precio + "%0A";
+        total += producto.precio;
+    });
+
+    mensaje += "%0ATotal: $" + total.toLocaleString("es-CO") + " COP";
+    mensaje += "%0A%0AEnvío comprobante ahora 🙌";
+
+    let telefono = "573138556802";
+
+    window.open("https://wa.me/" + telefono + "?text=" + mensaje);
+
+    alert("🎉 Pedido confirmado 🎉");
+
+    localStorage.removeItem("carrito");
+    mostrarProductos();
+    mostrarTotal();
+    actualizarContador();
 }
 
 // ===== CONTADOR NAVBAR =====
