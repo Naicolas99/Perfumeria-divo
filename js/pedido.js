@@ -29,9 +29,14 @@ function mostrarTotal(){
         total += producto.precio;
     });
 
+    // Formato pesos colombianos
+    let totalFormateado = total.toLocaleString("es-CO");
+
     let totalElemento = document.getElementById("total");
     if(totalElemento){
-        totalElemento.innerText = total;
+        totalElemento.innerText = totalFormateado + " COP";
+    }
+}
     }
 }
 
