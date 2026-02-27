@@ -70,8 +70,8 @@ button:hover{
     background:#ffd700;
 }
 
-/* ===== BOTON ENLACE (VER CATALOGO / IR PEDIDO) ===== */
-a{
+/* ===== BOTONES ENLACE (NO redes flotantes) ===== */
+a:not(.whatsapp):not(.instagram):not(.facebook){
     background:gold;
     color:black;
     padding:12px 22px;
@@ -80,7 +80,7 @@ a{
     font-weight:bold;
 }
 
-a:hover{
+a:not(.whatsapp):not(.instagram):not(.facebook):hover{
     background:#ffd700;
 }
 
@@ -149,7 +149,7 @@ img{
     font-size:12px;
 }
 
-/* ===== BOTONES FLOTANTES REDES (TAMAÑO NUEVO) ===== */
+/* ===== BOTONES FLOTANTES REDES (TAMAÑO FINAL) ===== */
 .redes-flotantes{
     position: fixed;
     bottom: 20px;
@@ -160,24 +160,23 @@ img{
 }
 
 .redes-flotantes a{
-    font-size: 18px;        /* tamaño icono */
-    width: 45px;            /* tamaño círculo */
-    height: 45px;
-    border-radius: 50%;
+    font-size:18px;        /* tamaño icono */
+    width:45px;            /* tamaño circulo */
+    height:45px;
+    border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
     text-decoration:none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    transition: 0.3s;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    transition:0.3s;
 }
 
 .redes-flotantes a:hover{
     transform: scale(1.1);
 }
 
-
-/* COLORES REDES */
+/* ===== COLORES REALES REDES ===== */
 .whatsapp{
     background:#25D366;
     color:white;
